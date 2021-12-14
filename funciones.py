@@ -31,8 +31,8 @@ def graf_barra(dataframe, variable):
     plt.show()  
 
 def report_scores(y_testeo, y_prediccion):
-    mse = mean_squared_error(y_testeo, y_prediccion).round(1)
-    r2 = r2_score(y_testeo, y_prediccion).round(2)
+    mse = mean_squared_error(y_testeo, y_prediccion).round(4)
+    r2 = r2_score(y_testeo, y_prediccion).round(5)
     
     print('Error Cuadrático Promedio (MSE):', mse)
     print('R2:', r2) 
